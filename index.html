@@ -6,261 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/6.css"/>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: "Ubuntu", sans-serif;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 
-        .a {
-            height: 100vh;
-            background: url(assets/a.png) no-repeat center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .profile-card {
-            width: 400px;
-            text-align: center;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .card-header {
-            background: #2e5f8d;
-            padding: 60px 40px;
-        }
-
-        .pic {
-            display: inline-block;
-            padding: 8px;
-            background: linear-gradient(130deg, #74b9ff, #e66767);
-            margin: auto;
-            border-radius: 50%;
-            background-size: 200% 200%;
-            animation: animated-gradient 2s linear infinite;
-
-        }
-
-        @keyframes animated-gradient {
-            25% {
-                background-position: left bottom;
-            }
-
-            50% {
-                background-position: right bottom;
-            }
-
-            75% {
-                background-position: right top;
-            }
-
-            100% {
-                background-position: left top;
-            }
-        }
-
-        .pic img {
-            display: block;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        .name {
-            text-shadow: 0 0 3px #FF0000;
-            color: black;
-            font-size: 28px;
-            font-weight: 600;
-            margin: 10px 0;
-        }
-
-        .desc {
-            font-size: 18px;
-            color: #e66767;
-        }
-
-        .sm {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .sm a {
-            color: #f2f2f2;
-            width: 56px;
-            font-size: 22px;
-            transition: .3s linear;
-        }
-
-        .sm a:hover {
-            color: #e66767;
-        }
-
-        .contact-btn {
-            display: inline-block;
-            padding: 12px 50px;
-            color: #e66767;
-            border: 2px solid #e66767;
-            border-radius: 6px;
-            margin-top: 16px;
-            transition: .3s linear;
-            color: white;
-        }
-
-        .contact-bth:hover {
-            background: #e66767;
-            color: #f2f2f2;
-        }
-
-        .card-footer {
-            background: black;
-            padding: 60px 10px;
-
-        }
-
-        .number {
-            display: flex;
-            align-items: center;
-        }
-
-        .item {
-            flex: 1;
-            text-transform: uppercase;
-            font-size: 13px;
-            color: #e66767;
-        }
-
-        .item span {
-            display: block;
-            color: #fbfdff;
-            font-size: 30px;
-
-        }
-
-        .border {
-            width: 1px;
-            height: 30px;
-            background: rgb(246, 245, 247);
-        }
-
-        /* profile-card 2 */
-        .b {
-            width: 400px;
-            text-align: center;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            font-weight: 300;
-            color: black;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: .2rem;
-            text-align: center;
-
-        }
-
-        .section-title span {
-            color: crimson;
-        }
-
-        #projects .projects {
-            flex-direction: column;
-            max-width: 1000px;
-            margin: 10% 0;
-            right: 10px;
-            padding: 0;
-
-        }
-
-
-
-        #projects .projects-header h1 {
-            margin-bottom: 50px;
-        }
-
-        #projects .all-projects {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column; 
-        }
-
-        #projects .projects-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 1200px;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        #projects .project-info {
-            padding: 30px;
-            flex-basis: 50%;
-            height: 100%;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-            color: white;
-
-        }
-
-        #projects .project-info h1 {
-            font-size: 2rem;
-            font-weight: 500;
-
-        }
-
-        #projects .project-info h2 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-top: 10px;
-
-        }
-
-        #projects .project-info p {
-            color: white;
-
-        }
-
-        #projects .project-img {
-            flex-basis: 50%;
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        #projects .project-info-img:after {
-
-            
-            left: 10px;
-            height: 1200px;
-            width: 1200;
-            background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-            opacity: .7;
-        }
-        .size{
-            width:150px;
-        }
-        .c{
-            background: cornflowerblue;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -269,7 +18,8 @@
         <div class="profile-card">
             <div class="card-header">
                 <div class="pic">
-                    <img src="https://scontent.fvca1-4.fna.fbcdn.net/v/t1.6435-9/181119439_935101627240455_414283883741772286_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5RZc3G46NdQAX-SfB9S&_nc_ht=scontent.fvca1-4.fna&oh=a73fbb16c03c41aa6a78d5b52f2629db&oe=61CD88DC" alt="">
+                    <img src="https://scontent.fvca1-4.fna.fbcdn.net/v/t1.6435-9/181119439_935101627240455_414283883741772286_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5RZc3G46NdQAX-SfB9S&_nc_ht=scontent.fvca1-4.fna&oh=a73fbb16c03c41aa6a78d5b52f2629db&oe=61CD88DC"
+                        alt="">
                 </div>
                 <div class="name">Nguyễn Thành Tân</div>
                 <div class="desc">Sinh viên</div>
@@ -303,7 +53,7 @@
         <div class="b">
             <div class="card-header">
                 <div class="pic">
-                    <img src="assets/Bang.png" alt="">
+                    <img src="/Bang.png" alt="">
                 </div>
                 <div class="name">Nguyễn Huy Bằng</div>
                 <div class="desc">Sinh viên</div>
@@ -337,7 +87,8 @@
         <div class="profile-card">
             <div class="card-header">
                 <div class="pic">
-                    <img src="https://scontent.fvca1-4.fna.fbcdn.net/v/t1.6435-9/72222152_133749888015790_5003128195323527168_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zEV4S3FkRjkAX_MEAsZ&_nc_ht=scontent.fvca1-4.fna&oh=6ecc750611542c952409cadb6aa17fb5&oe=61CD3641" alt="">
+                    <img src="https://scontent.fvca1-4.fna.fbcdn.net/v/t1.6435-9/72222152_133749888015790_5003128195323527168_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zEV4S3FkRjkAX_MEAsZ&_nc_ht=scontent.fvca1-4.fna&oh=6ecc750611542c952409cadb6aa17fb5&oe=61CD3641"
+                        alt="">
                 </div>
                 <div class="name">Dương Minh Hiếu</div>
                 <div class="desc">Sinh viên</div>
@@ -369,7 +120,6 @@
             </div>
         </div>
     </div>
-    <hr>
     <div class="c">
         <section id="projects">
             <div class="projects container">
@@ -381,7 +131,7 @@
                         <div class="project-info">
                             <h1>Nguyễn Thành Tân</h1>
                             <h2>Hình ảnh :</h2>
-                            <img class="size" src="assets/tui.jpg"/>
+                            <img class="size" src="assets1/tui.jpg" />
                             <h2> -Vị trí hướng đến trong tương lai</h2>
                             <p> -Mơ Ước:</p>
                             <p> Đó là được trở thành một Leader Developer</p>
@@ -412,7 +162,7 @@
                             <div class="project-info">
                                 <h1>Nguyễn Huy Bằng</h1>
                                 <h2>Hình ảnh :</h2>
-                                <img  class="size" src="/Bang.png"/>
+                                <img class="size" src="assets1/Bang.png" />
                                 <h2> -Vị trí hướng đến trong tương lai</h2>
                                 <p> -Mơ Ước:</p>
                                 <p>-Nghề nghiệp mong ước của em trong tương lai là làm một nhà phát triển phần mềm cho
@@ -434,10 +184,10 @@
                             <div class="project-info">
                                 <h1>Dương Minh HIếu</h1>
                                 <h2>Hình ảnh :</h2>
-                                <img src=""/>
+                                <img class="size" src="assets1/HIEU.PNG" />
                                 <h2> -Vị trí hướng đến trong tương lai</h2>
                                 <p> -Mơ Ước:</p>
-                                <p> Nghề nghiệp mà em mong muốn đó là Lập trình viên phần mềm (Software Coder)
+                                <p> Nghề nghiệp mà em mong muốn đó là Lập trình viên phần mềm (Software Coder)
                                     Các nhiệm vụ chính của một lập trình viên đó là:
                                 <ul>
                                     <li>Xây dựng mới một ứng dụng</li>
@@ -457,43 +207,6 @@
         </section>
 
     </div>
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+</body>
 
 </html>
